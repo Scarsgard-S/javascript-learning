@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="font-size: 2vh;">
+<head>
+  <title>Пятая задача в learn.javascript.ru</title>
+</head>
+<body>
+  <header>
+    <h1>Пятая задача в learn.javascript.ru</h1>
+    <h2>Какие буквы (заглавные или строчные) использовать для имён констант?</h2>
+    <p><strong>Важность: 4</strong></p>
+  </header>
+
+  <section>
+    <h3>Задача:</h3>
+        <p>
+        Рассмотрим следующий код:
+        </p>
+        <code>
+        const birthday = '18.04.1982';
+            
+        const age = someCode(birthday);
+        </code>
+        <p>У нас есть константа birthday, а также age, которая вычисляется при помощи некоторого кода, используя значение из birthday (в данном случае детали не имеют значения, поэтому код не рассматривается).</p>
+        <p>Можно ли использовать заглавные буквы для имени birthday? А для age? Или одновременно для обеих переменных?</p>
+        <code>    
+        const BIRTHDAY = '18.04.1982'; // использовать заглавные буквы?
+    
+        const AGE = someCode(BIRTHDAY); // а здесь?
+        </code>
+    </pre>
+  </section>
+
+  <section>
+    <h3>Решение:</h3>
+    <pre style="color: blue;"><code>
+const BIRTHDAY = '18.04.1982';
+// someCode(BIRTDAY);
+const age = BIRTHDAY; // нижний регистр потому что значение возраста со временеи изменится
+        
+console.log(BIRTHDAY);
+    </code></pre>
+  </section>
+
+  <script>
+const BIRTHDAY = '18.04.1982';
+// someCode(BIRTDAY);
+const age = BIRTHDAY; // нижний регистр потому что значение возраста со временеи изменится
+
+console.log(BIRTHDAY);
+  </script>
+</body>
+</html>
